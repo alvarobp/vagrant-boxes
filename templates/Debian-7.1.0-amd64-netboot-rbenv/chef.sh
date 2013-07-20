@@ -8,6 +8,9 @@ if [ -z "$CHEF_INSTALLMETHOD" ]; then
   export CHEF_INSTALLMETHOD="gems"
 fi
 
+# Make sure rbenv environment is loaded here
+[ -f "/etc/profile.d/rbenv.sh" ] && . /etc/profile.d/rbenv.sh
+
 # Installing chef
 case $CHEF_INSTALLMETHOD in
   "gems")
@@ -18,6 +21,7 @@ case $CHEF_INSTALLMETHOD in
     else
       gem install chef --no-ri --no-rdoc --version $CHEF_VERSION
     fi
+    rbenv rehash
     ;;
 
   "omnibus")
