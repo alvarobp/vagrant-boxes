@@ -5,3 +5,5 @@ apt-get update
 
 # Install puppet/facter
 apt-get install -y puppet facter
+
+rm puppetlabs-release-wheezy.deb
