@@ -5,6 +5,8 @@
 .ruby-version
 
 veewee/definitions
-
 veewee/iso/*.iso
+
+packer_cache
+
 *.box
