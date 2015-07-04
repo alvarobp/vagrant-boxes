@@ -8,5 +8,6 @@ veewee/definitions
 veewee/iso/*.iso
 
 packer_cache
+output-*
 
 *.box
