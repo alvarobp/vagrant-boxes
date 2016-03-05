@@ -10,7 +10,7 @@
 
 # Set default global ruby version if it's set
 [ -z "$GLOBAL_RUBY_VERSION" ] &&
-  export GLOBAL_RUBY_VERSION=2.2.2
+  export GLOBAL_RUBY_VERSION=2.3.0
 
 # Install rbenv
 git clone git://github.com/sstephenson/rbenv.git /usr/local/rbenv

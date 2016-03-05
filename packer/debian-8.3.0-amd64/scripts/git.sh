@@ -1,6 +1,6 @@
 #!/bin/bash -eux
 
-export GIT_VERSION="2.4.5"
+export GIT_VERSION="2.7.2"
 
 apt-get install -y build-essential libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev
 

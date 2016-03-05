@@ -1,7 +1,8 @@
 {
   "variables": {
     "PACKER_OS_FLAVOUR": "debian",
-    "PACKER_BOX_NAME": "debian-8.1.0-amd64"
+    "PACKER_BOX_NAME": "debian-8.3.0-amd64",
+    "DEBIAN_VERSION": "8.3.0"
   },
   "builders": [
     {
@@ -27,9 +28,9 @@
       "disk_size": 10140,
       "guest_os_type": "Debian_64",
       "http_directory": "http",
-      "iso_checksum": "7844a8e84afe7a168a8f893b298d0dd06d869deffc73fef27791a252688a9d2affc6e4f46b2c5db4794054cec84365f2107c012f1025eb85826bb340134932ec",
+      "iso_checksum": "070db3644c39374fdc87fd3de51388dcc0e05b866eaf37f2193d1818f0128e938c42e4eb9f1de555741c143a51edee07903a33271fca2696a771e4ae5c868277",
       "iso_checksum_type": "sha512",
-      "iso_url": "http://cdimage.debian.org/cdimage/release/8.1.0/amd64/iso-cd/{{ user `PACKER_BOX_NAME` }}-netinst.iso",
+      "iso_url": "http://cdimage.debian.org/cdimage/release/{{ user `DEBIAN_VERSION` }}/amd64/iso-cd/{{ user `PACKER_BOX_NAME` }}-netinst.iso",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
       "ssh_port": 22,
