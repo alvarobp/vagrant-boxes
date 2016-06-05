@@ -8,6 +8,9 @@
 #
 # Brought from https://github.com/benlinton/veewee-files/blob/master/templates/Debian-6.0.7-amd64-netboot/ruby-rbenv-system-wide.sh
 
+# Install dependencies
+apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev
+
 # Set default global ruby version if it's set
 [ -z "$GLOBAL_RUBY_VERSION" ] &&
   export GLOBAL_RUBY_VERSION=2.3.0
